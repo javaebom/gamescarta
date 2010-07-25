@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class Freecell extends Jogo {
 
     //Cria baralho
-   public Baralho baralho = new Baralho();
+    public Baralho baralho = new Baralho();
     //Inicialização de todas as pilhas
     public Fundacao fundacao1 = new Fundacao();
     public Fundacao fundacao2 = new Fundacao();
@@ -168,15 +168,28 @@ public class Freecell extends Jogo {
     }
 
     /**
-     * Metodo responsável por verificar a quantidade de celulas livres que encontram-se vazias
+     * Metodo responsável por verificar a quantidade de celulas que se encontram vazias
      * @return inteiro referente ao número de celulas vazias
      */
     public int verificarNumeroDeCelulasVazias() {
-        int quantidade;
-        quantidade = celula1.getPilha().size()
-                + celula2.getPilha().size()
-                + celula3.getPilha().size()
-                + celula4.getPilha().size();
+        int quantidade = 0;
+
+        if (this.celula1.getPilha().isEmpty()) {
+            quantidade++;
+        }
+
+        if (this.celula2.getPilha().isEmpty()) {
+            quantidade++;
+        }
+
+        if (this.celula3.getPilha().isEmpty()) {
+            quantidade++;
+        }
+
+        if (this.celula4.getPilha().isEmpty()) {
+            quantidade++;
+        }
+
         return quantidade;
 
     }
@@ -193,8 +206,19 @@ public class Freecell extends Jogo {
         System.out.println("origem " + origem);
         System.out.println("destino " + destino);
 
+        Pilha pilhaOrigem = this.capturaPilha(origem);
+        Pilha pilhaDestino = this.capturaPilha(destino);
+
+
+        if(pilhaOrigem instanceof Fileiras){
+            System.out.println("Entrou no if, pois regiao de origem é fileira");
+            pilhaOrigem.setQtdMaxCartasMover(this.verificarNumeroDeCelulasVazias());
+        }
+            
+
+
 //        return this.celula1.verifyRule(value, nipe, this.fileira1);
-        return this.capturaPilha(destino).verifyRule(value, nipe, this.capturaPilha(origem));
+        return pilhaDestino.verifyRule(value, nipe, pilhaOrigem);
     }
 
     /**

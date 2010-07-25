@@ -1,6 +1,5 @@
 package jogo;
 
-import java.util.Stack;
 
 /**
  * Pilha de fileira do jogo de cartas.
@@ -11,6 +10,9 @@ public class Fileiras extends Pilha {
 
     public Carta cartaViradaTopo;
 
+
+
+
     /**
      * Construtor
      */
@@ -19,6 +21,8 @@ public class Fileiras extends Pilha {
         cartaViradaTopo = new Carta();
         this.regras = new RegrasFileiras();
     }
+
+
 
 
     /**

@@ -33,7 +33,7 @@ import java.util.Stack;
 //para que enfim a movimentação seja efetuada ou não.
 public class RegrasFileiras extends RegrasMovimentacao {
 
-    int numeroCelulasVazias;
+ 
 
     /**
      * Implementação do método que analisa se a movimentação de uma ou mais cartas para as fileiras
@@ -53,7 +53,7 @@ public class RegrasFileiras extends RegrasMovimentacao {
         if (this.pilhaVazia(pilhaDestino)) {
             System.out.println("Regras Fileiras: Entrei no if da pilha vazia");
             Stack<Carta> pilhaAuxiliar = pilhaOrigem.removerCarta(pilhaOrigem.selecionaCarta(valor, nipe));
-            if (pilhaAuxiliar.size() <= this.capturaQtdCartasPodemSerMovidas()) {
+            if (pilhaAuxiliar.size() <= pilhaOrigem.getQtdMaxCartasMover()) {
                 if (this.verificaAlternanciaDeCorDeConjuntoDeCarta(pilhaAuxiliar)) {
                     if (this.verificaDescendenciaDeConjuntoDeCarta(pilhaAuxiliar)) {
                         pilhaDestino.adicionarCarta(pilhaAuxiliar);
@@ -83,7 +83,7 @@ public class RegrasFileiras extends RegrasMovimentacao {
                 if (this.descendente(pilhaDestino, pilhaOrigem.selecionaCarta(valor, nipe).getNumero())) {
                     System.out.println("Regras Fileiras: Entrei no if da descendencia");
                     Stack<Carta> pilhaAuxiliar = pilhaOrigem.removerCarta(pilhaOrigem.selecionaCarta(valor, nipe));
-                    if (pilhaAuxiliar.size() <= this.capturaQtdCartasPodemSerMovidas()) {
+                    if (pilhaAuxiliar.size() <= pilhaOrigem.getQtdMaxCartasMover()) {
                         if (this.verificaAlternanciaDeCorDeConjuntoDeCarta(pilhaAuxiliar)) {
                             if (this.verificaDescendenciaDeConjuntoDeCarta(pilhaAuxiliar)) {
                                 pilhaDestino.adicionarCarta(pilhaAuxiliar);
@@ -108,29 +108,7 @@ public class RegrasFileiras extends RegrasMovimentacao {
         return false;
     }
 
-    /**
-     * Captura o número de células livres ocupadas
-     * @return inteiro referente ao número de celulas livres ocupadas
-     */
-    public int getNumeroCelulasOcupadas() {
-        return numeroCelulasVazias;
-    }
 
-    /**
-     * Define o número de celulas livres ocupadas
-     * @param numeroCelulasVazias inteiro referente ao número de celulas ocupadas
-     */
-    public void setNumeroCelulasOcupadas(int numeroCelulasVazias) {
-        this.numeroCelulasVazias = numeroCelulasVazias;
-    }
 
-    /**
-     * Captura o número de cartas de fileiras que poderão ser movidas em conjunto.
-     * @return
-     */
-    public int capturaQtdCartasPodemSerMovidas() {
-        return 5;
 
-//        return (getNumeroCelulasOcupadas() + 1);
-    }
 }

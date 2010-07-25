@@ -13,6 +13,7 @@ public abstract class Pilha {
     public Stack<Carta> pilha = new Stack<Carta>();
     RegrasMovimentacao regras;
     public String nome;
+    public int qtdMaxCartasMover = 5;
 
     /**
      * Metodo responsável por verificar as regras de movimentação de cartas para as pilhas
@@ -89,5 +90,25 @@ public abstract class Pilha {
             }
         }
         return null;
+    }
+
+
+         /**
+     * Captura o número de células ocupadas
+     * @return inteiro referente ao número de celulas livres ocupadas
+     */
+    public int getQtdMaxCartasMover() {
+        System.out.println("QUANTIDADE DE CARTAS QUE PODEM SER MOVIDAS: " + this.qtdMaxCartasMover);
+        return qtdMaxCartasMover;
+    }
+
+
+    /**
+     * Define o número de celulas livres ocupadas
+     * @param numeroCelulasVazias inteiro referente ao número de celulas ocupadas
+     */
+
+    public void setQtdMaxCartasMover(int numCelulasLivre) {
+        this.qtdMaxCartasMover = numCelulasLivre + 1;
     }
 }
