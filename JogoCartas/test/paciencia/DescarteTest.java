@@ -1,4 +1,4 @@
-package pilhas.tipo;
+package paciencia;
 
 /*
  * To change this template, choose Tools | Templates

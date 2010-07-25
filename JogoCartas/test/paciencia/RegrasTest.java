@@ -80,7 +80,7 @@ public class RegrasTest extends TestCase{
         descarte.pilhaDescarte.push(cartaDescarte);
 
         Carta cartaFileira = new Carta();
-        cartaFileira.setCarta(5, "ESPADAS");
+        cartaFileira.setCarta(5, "ESPADA");
         fileira.getPilha().push(cartaFileira);
         
         Regras regra = new Regras();
@@ -108,7 +108,7 @@ public class RegrasTest extends TestCase{
         fileiraOrigem.getPilha().push(cartafileiraOrigem);
 
         Carta cartafileiraDestino = new Carta();
-        cartafileiraDestino.setCarta(14, "ESPADAS");
+        cartafileiraDestino.setCarta(14, "ESPADA");
         fileiraDestino.getPilha().push(cartafileiraDestino);
 
         Regras regra = new Regras();
@@ -136,7 +136,7 @@ public class RegrasTest extends TestCase{
         fileira.getPilha().push(cartafileira);
 
         Carta cartaFundacao = new Carta();
-        cartaFundacao.setCarta(14, "ESPADAS");
+        cartaFundacao.setCarta(14, "ESPADA");
         fundacao.getPilha().push(cartaFundacao);
 
         Regras regra = new Regras();
@@ -160,7 +160,7 @@ public class RegrasTest extends TestCase{
         Fileiras fileira = new Fileiras();
 
         Carta cartaFundacao = new Carta();
-        cartaFundacao.setCarta(6, "ESPADAS");
+        cartaFundacao.setCarta(6, "ESPADA");
         fundacao.getPilha().push(cartaFundacao);
 
         Carta cartafileira = new Carta();
@@ -192,7 +192,7 @@ public class RegrasTest extends TestCase{
         descarte.pilhaDescarte.push(cartaDescarte);
 
         Carta cartaFundacao = new Carta();
-        cartaFundacao.setCarta(6, "ESPADAS");
+        cartaFundacao.setCarta(6, "ESPADA");
         fundacao.getPilha().push(cartaFundacao);
         
         Regras regra = new Regras();
