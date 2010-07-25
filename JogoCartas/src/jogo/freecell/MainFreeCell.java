@@ -7,7 +7,7 @@ package jogo.freecell;
 import jogo.classescomum.FrameCardGame;
 
 /**
- *
+ *Classe que invoca a interface gráfica para início de jogo
  * @author Fernanda
  */
 public class MainFreeCell {

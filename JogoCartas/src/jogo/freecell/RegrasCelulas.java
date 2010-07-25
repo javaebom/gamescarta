@@ -10,8 +10,8 @@ import jogo.classescomum.Pilha;
 import jogo.classescomum.RegrasMovimentacao;
 
 /**
- *
- * @author User
+ *Classe que define as regras do jogo quando cartas são movimentadas para uma celula
+ * @author Fernanda e Igo
  */
 public class RegrasCelulas extends RegrasMovimentacao {
 

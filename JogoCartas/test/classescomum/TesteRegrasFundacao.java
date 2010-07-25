@@ -12,9 +12,10 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+
 /**
- *
- * @author Fernanda
+ * Classe de Teste para validar movimentação de cartas cujo destino é uma pilha fundação
+ * @author Fernanda e Igo
  */
 public class TesteRegrasFundacao {
 

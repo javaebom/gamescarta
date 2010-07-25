@@ -8,7 +8,7 @@ package paciencia;
 import jogo.classescomum.Fundacao;
 import jogo.paciencia.Descarte;
 import jogo.classescomum.Baralho;
-import jogo.classescomum.Fileiras;
+import jogo.classescomum.Fileira;
 import jogo.paciencia.Regras;
 import jogo.classescomum.Carta;
 import java.util.Stack;
@@ -23,8 +23,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
- * @author
+ **Classe que testa metodos da classe Regras
+ * @author Andre e Wilson
  */
 public class RegrasTest extends TestCase{
 
@@ -73,7 +73,7 @@ public class RegrasTest extends TestCase{
         baralho.inicializaBaralho();
 
         Descarte descarte = new Descarte();
-        Fileiras fileira = new Fileiras();
+        Fileira fileira = new Fileira();
 
         Carta cartaDescarte = new Carta();
         cartaDescarte.setCarta(4, "OURO");
@@ -100,8 +100,8 @@ public class RegrasTest extends TestCase{
         Baralho baralho = new Baralho();
         baralho.inicializaBaralho();
 
-        Fileiras fileiraOrigem = new Fileiras();
-        Fileiras fileiraDestino = new Fileiras();
+        Fileira fileiraOrigem = new Fileira();
+        Fileira fileiraDestino = new Fileira();
 
         Carta cartafileiraOrigem = new Carta();
         cartafileiraOrigem.setCarta(13, "OURO");
@@ -128,7 +128,7 @@ public class RegrasTest extends TestCase{
         Baralho baralho = new Baralho();
         baralho.inicializaBaralho();
 
-        Fileiras fileira = new Fileiras();
+        Fileira fileira = new Fileira();
         Fundacao fundacao = new Fundacao();
 
         Carta cartafileira = new Carta();
@@ -157,7 +157,7 @@ public class RegrasTest extends TestCase{
         baralho.inicializaBaralho();
 
         Fundacao fundacao = new Fundacao();
-        Fileiras fileira = new Fileiras();
+        Fileira fileira = new Fileira();
 
         Carta cartaFundacao = new Carta();
         cartaFundacao.setCarta(6, "ESPADA");

@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package FreeCell;
+package classescomum;
 
 import jogo.classescomum.Carta;
 import jogo.classescomum.Pilha;
@@ -18,8 +18,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
- * @author User
+ *Classe que testa metodos da classe RegrasMovimentacao
+ * @author Fernanda e Igo
  */
 public class TesteRegrasMovimentacao {
 

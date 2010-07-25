@@ -3,8 +3,8 @@ package jogo.classescomum;
 import java.util.Stack;
 
 /**
- * Classe abstrata utilizada a fim de organizar a estrutura do projeto.
- * Esta representa cada pilha utilizada no jogo para manipular as cartas
+ * Classe abstrata que define comportamento semelhante entre todas as pilhas do jogo
+ * 
  * @author Wilson
  * @author Andre
  */

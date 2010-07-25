@@ -1,7 +1,7 @@
 package jogo.paciencia;
 
 import jogo.classescomum.Baralho;
-import jogo.classescomum.Fileiras;
+import jogo.classescomum.Fileira;
 import jogo.classescomum.Fundacao;
 import jogo.classescomum.Jogo;
 
@@ -20,13 +20,13 @@ public class Paciencia extends Jogo {
     public Fundacao fundacao2 = new Fundacao();
     public Fundacao fundacao3 = new Fundacao();
     public Fundacao fundacao4 = new Fundacao();
-    public Fileiras fileira1 = new Fileiras();
-    public Fileiras fileira2 = new Fileiras();
-    public Fileiras fileira3 = new Fileiras();
-    public Fileiras fileira4 = new Fileiras();
-    public Fileiras fileira5 = new Fileiras();
-    public Fileiras fileira6 = new Fileiras();
-    public Fileiras fileira7 = new Fileiras();
+    public Fileira fileira1 = new Fileira();
+    public Fileira fileira2 = new Fileira();
+    public Fileira fileira3 = new Fileira();
+    public Fileira fileira4 = new Fileira();
+    public Fileira fileira5 = new Fileira();
+    public Fileira fileira6 = new Fileira();
+    public Fileira fileira7 = new Fileira();
 
 
     /*

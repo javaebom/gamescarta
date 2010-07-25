@@ -18,8 +18,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
- * @author Fernanda
+ *Classe que testa metodos da classe Jogo
+ * @author Fernanda e Igo
  */
 public class TesteJogo {
 

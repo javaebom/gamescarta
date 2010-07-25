@@ -2,11 +2,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package FreeCell;
+package classescomum;
 
 import jogo.classescomum.Carta;
 import jogo.classescomum.Pilha;
-import jogo.classescomum.Fileiras;
+import jogo.classescomum.Fileira;
 import java.util.Stack;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -16,12 +16,12 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
- * @author User
+ *Classe que testa metodos da classe Pilha
+ * @author Fernanda e Igo
  */
 public class TestePilha {
 
-    Pilha pilhaFileiras = new Fileiras();
+    Pilha pilhaFileiras = new Fileira();
     Stack<Carta> pilha = new Stack<Carta>();
 
     public TestePilha() {

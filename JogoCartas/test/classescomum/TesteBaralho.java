@@ -13,8 +13,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
- * @author Fernanda
+ *Classe que testa metodos da classe Baralho
+ * @author Fernanda e Igo
  */
 public class TesteBaralho {
 

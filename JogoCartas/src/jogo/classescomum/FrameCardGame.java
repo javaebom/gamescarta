@@ -11,6 +11,7 @@ import jogo.freecell.Freecell;
 
 /*
  * FrameCardGame.java
+ * Interface gráfica do jogo de FreeCell
  *
  * Created on 30/05/2010, 17:08:38
  */

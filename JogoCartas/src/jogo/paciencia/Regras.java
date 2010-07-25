@@ -2,7 +2,7 @@ package jogo.paciencia;
 
 import java.util.Stack;
 import jogo.classescomum.Carta;
-import jogo.classescomum.Fileiras;
+import jogo.classescomum.Fileira;
 import jogo.classescomum.Fundacao;
 
 /**
@@ -43,7 +43,7 @@ public class Regras {
         /*
          * Move carta da pilha de descarte para pilha de fileira.
          */
-	public void moverCartasDescarteParaFileira(Descarte descarte, Fileiras fileira) {
+	public void moverCartasDescarteParaFileira(Descarte descarte, Fileira fileira) {
 
             if(!(descarte.pilhaDescarte.empty())){
 
@@ -61,7 +61,7 @@ public class Regras {
         /*
          * Move carta da pilha de fileira para outra pilha de fileira.
          */
-	public void moverCartasFileiraParaFileira(Fileiras fileiraOrigem, Fileiras fileiraDestino) {
+	public void moverCartasFileiraParaFileira(Fileira fileiraOrigem, Fileira fileiraDestino) {
 
             if(!(fileiraOrigem.getPilha().empty())){
 
@@ -79,7 +79,7 @@ public class Regras {
         /*
          * Move carta da pilha de fileira para pilha de fundacao.
          */
-	public void moverCartasFileiraParaFundacao(Fileiras fileira, Fundacao fundacao) {
+	public void moverCartasFileiraParaFundacao(Fileira fileira, Fundacao fundacao) {
 
             if(fundacao.getPilha().empty()){
                 if(fileira.cartaViradaTopo.getNumero() == 1){
@@ -106,7 +106,7 @@ public class Regras {
          /*
          * Move carta da pilha de fundacao para pilha de fileira.
          */
-	public void moverCartasFundacaoParaFileiras(Fundacao fundacao, Fileiras fileira) {
+	public void moverCartasFundacaoParaFileiras(Fundacao fundacao, Fileira fileira) {
 
             if(!(fundacao.getPilha().empty())){
                 

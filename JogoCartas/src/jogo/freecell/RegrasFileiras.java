@@ -10,9 +10,11 @@ import jogo.classescomum.Pilha;
 import jogo.classescomum.RegrasMovimentacao;
 
 /**
- *
- * @author User
+ *Classe que define as regras do jogo quando cartas são movimentadas para uma fileira
+ * @author Fernanda e Igo
  */
+
+
 // Regras de fileira:
 //Se estiver vazia, pode receber cartas que não é K. Diferente do paciência.
 //Precisa obedecer a regra da descendência e da alternância de cor
@@ -34,6 +36,9 @@ import jogo.classescomum.RegrasMovimentacao;
 //Então é verificado a alternacia de cor e a descendencia entre a carta e a carta topo da pilha de destino
 //passando essa verificação, é então seguido os mesmos passos de verificação do conjunto de cartas descrito anteriormente
 //para que enfim a movimentação seja efetuada ou não.
+
+
+
 public class RegrasFileiras extends RegrasMovimentacao {
 
  

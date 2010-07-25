@@ -1,25 +1,20 @@
-package jogo.classescomum;
+package jogo.freecell;
 
-import java.util.Stack;
+import jogo.classescomum.Pilha;
 
 /**
- * Pilha de fundacao do jogo de cartas.
- * @author Wilson
- * @author Andre
+ * Classe que representa uma instância de uma célula.
+ * 
+ * @author Fernanda & Igo
  */
+public class Celula extends Pilha {
 
-public class Fundacao extends Pilha{
+    public Celula() {
+        this.regras = new RegrasCelulas();
+        }
 
-    
-    public Fundacao() {
-        this.regras = new RegrasFundacao();
-    }
-
-
-
-
-/**
- * Metodo responsável por verificar as regras de movimentação para as pilhas de fundação
+    /**
+ * Metodo responsável por verificar as regras de movimentação para as pilhas de celulas
  * @param valor inteiro referente ao número da carta
  * @param nipe String referente ao nipe da carta
  * @param origem Pilha de origem da carta a(s) ser movida
@@ -28,8 +23,4 @@ public class Fundacao extends Pilha{
     public boolean verifyRule(int valor, String nipe, Pilha origem) {
         return regras.verificaMovimentacao(valor, nipe, origem, this);
     }
-
-
-
-
 }

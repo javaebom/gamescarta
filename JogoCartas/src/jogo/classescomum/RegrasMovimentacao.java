@@ -8,7 +8,8 @@ import java.util.Stack;
 
 /**
  *
- * @author User
+ * Abstração que define comportamento semelhante das regras de movimentação de cartas
+ * @author Fernanda e Igo
  */
 public abstract class RegrasMovimentacao {
 

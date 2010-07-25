@@ -17,7 +17,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
+ *Classe que testa metodos da classe Descarte
  * @author Dede do Bem
  */
 public class DescarteTest {

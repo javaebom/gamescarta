@@ -2,7 +2,7 @@ package jogo.freecell;
 
 import java.util.ArrayList;
 import jogo.classescomum.Baralho;
-import jogo.classescomum.Fileiras;
+import jogo.classescomum.Fileira;
 import jogo.classescomum.Fundacao;
 import jogo.classescomum.Pilha;
 import jogo.classescomum.Jogo;
@@ -22,18 +22,18 @@ public class Freecell extends Jogo {
     public Fundacao fundacao2 = new Fundacao();
     public Fundacao fundacao3 = new Fundacao();
     public Fundacao fundacao4 = new Fundacao();
-    public Fileiras fileira1 = new Fileiras();
-    public Fileiras fileira2 = new Fileiras();
-    public Fileiras fileira3 = new Fileiras();
-    public Fileiras fileira4 = new Fileiras();
-    public Fileiras fileira5 = new Fileiras();
-    public Fileiras fileira6 = new Fileiras();
-    public Fileiras fileira7 = new Fileiras();
-    public Fileiras fileira8 = new Fileiras();
-    public CelulaLivre celula1 = new CelulaLivre();
-    public CelulaLivre celula2 = new CelulaLivre();
-    public CelulaLivre celula3 = new CelulaLivre();
-    public CelulaLivre celula4 = new CelulaLivre();
+    public Fileira fileira1 = new Fileira();
+    public Fileira fileira2 = new Fileira();
+    public Fileira fileira3 = new Fileira();
+    public Fileira fileira4 = new Fileira();
+    public Fileira fileira5 = new Fileira();
+    public Fileira fileira6 = new Fileira();
+    public Fileira fileira7 = new Fileira();
+    public Fileira fileira8 = new Fileira();
+    public Celula celula1 = new Celula();
+    public Celula celula2 = new Celula();
+    public Celula celula3 = new Celula();
+    public Celula celula4 = new Celula();
     public ArrayList<Pilha> pilhas = new ArrayList<Pilha>();
 
     /**
@@ -215,7 +215,7 @@ public class Freecell extends Jogo {
         Pilha pilhaDestino = this.capturaPilha(destino);
 
 
-        if(pilhaOrigem instanceof Fileiras){
+        if(pilhaOrigem instanceof Fileira){
             System.out.println("Entrou no if, pois regiao de origem é fileira");
             pilhaOrigem.setQtdMaxCartasMover(this.verificarNumeroDeCelulasVazias());
         }

@@ -15,6 +15,10 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+/**
+ * *Classe que testa metodos da classe Paciencia
+ * @author Andre e Wilson
+ */
 
 public class PacienciaTest {
 
