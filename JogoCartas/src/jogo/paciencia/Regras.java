@@ -1,6 +1,9 @@
-package jogo;
+package jogo.paciencia;
 
 import java.util.Stack;
+import jogo.classescomum.Carta;
+import jogo.classescomum.Fileiras;
+import jogo.classescomum.Fundacao;
 
 /**
  * Classe que possui todas as regras de movimento do jogo Paciencia.

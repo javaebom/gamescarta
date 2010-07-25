@@ -1,4 +1,6 @@
-package jogo;
+package jogo.classescomum;
+
+import jogo.freecell.RegrasFileiras;
 
 
 /**

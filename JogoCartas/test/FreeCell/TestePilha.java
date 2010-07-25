@@ -4,10 +4,10 @@
  */
 package FreeCell;
 
-import jogo.Carta;
+import jogo.classescomum.Carta;
+import jogo.classescomum.Pilha;
+import jogo.classescomum.Fileiras;
 import java.util.Stack;
-import jogo.Pilha;
-import jogo.Fileiras;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

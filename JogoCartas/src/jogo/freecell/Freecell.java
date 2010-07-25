@@ -1,6 +1,11 @@
-package jogo;
+package jogo.freecell;
 
 import java.util.ArrayList;
+import jogo.classescomum.Baralho;
+import jogo.classescomum.Fileiras;
+import jogo.classescomum.Fundacao;
+import jogo.classescomum.Pilha;
+import jogo.classescomum.Jogo;
 
 /**
  * Essa classe é responsável por todo o controle do jogo de Freecell.

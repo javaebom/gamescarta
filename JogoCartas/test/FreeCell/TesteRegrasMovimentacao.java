@@ -4,12 +4,12 @@
  */
 package FreeCell;
 
-import jogo.Carta;
+import jogo.classescomum.Carta;
+import jogo.classescomum.Pilha;
+import jogo.classescomum.Fundacao;
+import jogo.freecell.RegrasCelulas;
+import jogo.classescomum.RegrasMovimentacao;
 import java.util.Stack;
-import jogo.Fundacao;
-import jogo.Pilha;
-import jogo.RegrasCelulas;
-import jogo.RegrasMovimentacao;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

@@ -1,6 +1,8 @@
-package jogo;
+package jogo.paciencia;
 
 import java.util.Stack;
+import jogo.classescomum.Carta;
+import jogo.classescomum.Pilha;
 
 /**
  * Pilha de descarte do jogo paciencia.

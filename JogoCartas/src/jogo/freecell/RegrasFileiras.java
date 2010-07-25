@@ -2,9 +2,12 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package jogo;
+package jogo.freecell;
 
 import java.util.Stack;
+import jogo.classescomum.Carta;
+import jogo.classescomum.Pilha;
+import jogo.classescomum.RegrasMovimentacao;
 
 /**
  *

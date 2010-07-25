@@ -1,6 +1,6 @@
-package jogo;
+package jogo.freecell;
 
-import java.util.Stack;
+import jogo.classescomum.Pilha;
 
 /**
  * Classe que representa uma instância de uma célula Livre.

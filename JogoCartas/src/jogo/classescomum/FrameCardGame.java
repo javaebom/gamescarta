@@ -1,6 +1,7 @@
-package jogo;
+package jogo.classescomum;
 
 import javax.swing.JOptionPane;
+import jogo.freecell.Freecell;
 
 
 /*

@@ -1,13 +1,12 @@
-package jogo;
+package jogo.classescomum;
 
-import javax.smartcardio.Card;
 
 /**
  * Interface Jogo do projeto.
  * @author Wilson
  * @author Andre
  */
-abstract class Jogo {
+public abstract class Jogo {
 
     public abstract void iniciarJogo();
 

@@ -1,4 +1,4 @@
-package jogo;
+package jogo.classescomum;
 
 /**
  * Classe que representa uma carta do jogo.

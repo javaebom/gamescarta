@@ -1,4 +1,4 @@
-package jogo;
+package jogo.classescomum;
 
 import java.util.Stack;
 
@@ -11,7 +11,7 @@ import java.util.Stack;
 public abstract class Pilha {
 
     public Stack<Carta> pilha = new Stack<Carta>();
-    RegrasMovimentacao regras;
+    public RegrasMovimentacao regras;
     public String nome;
     public int qtdMaxCartasMover = 5;
 

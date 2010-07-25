@@ -1,4 +1,8 @@
-package jogo;
+package jogo.paciencia;
+
+import jogo.classescomum.Pilha;
+
+;
 
 import java.util.Stack;
 

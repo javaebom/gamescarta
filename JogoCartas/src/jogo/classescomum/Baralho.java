@@ -1,4 +1,4 @@
-package jogo;
+package jogo.classescomum;
 
 import java.util.Collections;
 import java.util.Vector;

@@ -1,4 +1,9 @@
-package jogo;
+package jogo.paciencia;
+
+import jogo.classescomum.Baralho;
+import jogo.classescomum.Fileiras;
+import jogo.classescomum.Fundacao;
+import jogo.classescomum.Jogo;
 
 /**
  * Classe principal de inicializacao do jogo Paciencia.
