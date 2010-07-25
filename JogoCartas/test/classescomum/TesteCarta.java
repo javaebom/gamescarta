@@ -46,22 +46,6 @@ public class TesteCarta {
     // The methods must be annotated with annotation @Test. For example:
     //
 
-    /**
-     * Testa se as cartas estão sendo distribuidas corretamente para uma Pilha
-     */
-    @Test
-     public void testaDistribuicaoDeCartas() {
-    Baralho baralho = new Baralho();
-    baralho.inicializaBaralho();
-    baralho.embaralhaBaralho();
-    Jogo jogo = new Freecell();
-    Pilha fundacoes = new Fundacao();
-    jogo.distribuirCartas(fundacoes, baralho, 0, 2);
 
-    assertEquals(baralho.baralho.get(0), fundacoes.getPilha().get(0));
-    assertEquals(baralho.baralho.get(1), fundacoes.getPilha().get(1));
-
-
-    }
 
 }
