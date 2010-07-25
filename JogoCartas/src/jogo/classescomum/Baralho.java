@@ -20,8 +20,6 @@ public class Baralho {
      */
     public void inicializaBaralho(){
 
-        System.out.println("CONSEGUI");
-
         Carta carta;
 
         for(int i = 0; i < 52; i++){
@@ -60,14 +58,6 @@ public class Baralho {
     }
 
 
-    public void exibeBaralho(){
-        for(int i = 0; i < 52; i++){
-            System.out.println("Carta " + i + " -> " +
-                    "Valor " + this.baralho.get(i).getNumero() +
-                    " / Nipe " + this.baralho.get(i).getNipe());
-        }
-
-    }
 
     /**
      * Obter o número de cartas contidas no baralho
@@ -84,7 +74,7 @@ public class Baralho {
      * @return objeto carta que ocupa a posição informada
      */
     public Carta capturaCarta(int posicao){
-        System.out.println("this.baralho.get(posicao) " + this.baralho.get(posicao).getNumero());
+       
         return this.baralho.get(posicao);
     }
 

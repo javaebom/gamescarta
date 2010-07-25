@@ -83,9 +83,6 @@ public abstract class RegrasMovimentacao {
      * @return true se foram da mesma cor, false caso contrario
      */
     public boolean corAlternada(Pilha pilha, String cor) {
-        System.out.println("Regras Movimentação - Entrei no cor alternada");
-        System.out.println("Regras Movimentação - Cor Origem: " + cor);
-        System.out.println("Regras Movimentação - Cor Destino: " + pilha.getPilha().peek().getCor());
         if (!pilha.getPilha().peek().getCor().equals(cor)) {
             return true;
         } else {
@@ -130,12 +127,9 @@ public abstract class RegrasMovimentacao {
      * @return true se for descendente, false caso contrário
      */
     public boolean descendente(Pilha pilha, int valor) {
-        System.out.println("Entrei na Descendencia ");
-        System.out.println("Entrei na Descendencia: valor da destino: " + pilha.getPilha().peek().getNumero());
-        System.out.println("Entrei na Descendencia: valor da origem: " + valor);
+       
 
         if (valor == pilha.getPilha().peek().getNumero() - 1) {
-            System.out.println("Entrei no if, eh descendente");
             return true;
         } else {
             return false;

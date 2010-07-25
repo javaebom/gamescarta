@@ -98,7 +98,6 @@ public abstract class Pilha {
      * @return inteiro referente ao número de celulas livres ocupadas
      */
     public int getQtdMaxCartasMover() {
-        System.out.println("QUANTIDADE DE CARTAS QUE PODEM SER MOVIDAS: " + this.qtdMaxCartasMover);
         return qtdMaxCartasMover;
     }
 

@@ -50,12 +50,8 @@ public class Freecell extends Jogo {
 
         this.baralho.inicializaBaralho();
 
-        this.baralho.exibeBaralho();
         this.baralho.embaralhaBaralho();
 
-        System.out.println("--------------------------------------------------");
-
-        this.baralho.exibeBaralho();
 
         distribuirCartas(fileira1, this.baralho, 0, 7);
         distribuirCartas(fileira2, this.baralho, 7, 14);
@@ -66,18 +62,6 @@ public class Freecell extends Jogo {
         distribuirCartas(fileira7, this.baralho, 40, 46);
         distribuirCartas(fileira8, this.baralho, 46, 52);
 
-
-        System.out.println("--------------------------------------------------");
-
-
-        fileira1.exibeFileira();
-        fileira2.exibeFileira();
-        fileira3.exibeFileira();
-        fileira4.exibeFileira();
-        fileira5.exibeFileira();
-        fileira6.exibeFileira();
-        fileira7.exibeFileira();
-        fileira8.exibeFileira();
 
 
 
@@ -161,9 +145,7 @@ public class Freecell extends Jogo {
     public Pilha capturaPilha(String nome) {
         for (int i = 0; i < this.pilhas.size(); i++) {
 
-//            System.out.println("this.pilhas.get(i).nome " + this.pilhas.get(i).getNome());
             if (this.pilhas.get(i).getNome().equals(nome)) {
-                System.out.println("Capturou a pilha de nome:  " + this.pilhas.get(i).getNome());
 
                 return this.pilhas.get(i);
             }
@@ -208,15 +190,12 @@ public class Freecell extends Jogo {
      */
     public boolean moveCard(int value, String nipe, String origem, String destino) {
         //mapeia Strings em Regions
-        System.out.println("origem " + origem);
-        System.out.println("destino " + destino);
 
         Pilha pilhaOrigem = this.capturaPilha(origem);
         Pilha pilhaDestino = this.capturaPilha(destino);
 
 
         if(pilhaOrigem instanceof Fileira){
-            System.out.println("Entrou no if, pois regiao de origem é fileira");
             pilhaOrigem.setQtdMaxCartasMover(this.verificarNumeroDeCelulasVazias());
         }
             

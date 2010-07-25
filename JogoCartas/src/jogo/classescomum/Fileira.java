@@ -58,12 +58,4 @@ public class Fileira extends Pilha {
         return regras.verificaMovimentacao(valor, nipe, origem, this);
     }
 
-
-    public void exibeFileira(){
-        System.out.println(this.nome + " ");
-        for(int i=0;i<this.getPilha().size();i++){
-            System.out.println("Valor: " + this.getPilha().get(i).getNumero()+
-                    " / Nipe: " + this.getPilha().get(i).getNipe());
-        }
-    }
 }
