@@ -156,8 +156,9 @@ public class Freecell extends Jogo {
     public Pilha capturaPilha(String nome) {
         for (int i = 0; i < this.pilhas.size(); i++) {
 
-            System.out.println("this.pilhas.get(i).nome " + this.pilhas.get(i).getNome());
+//            System.out.println("this.pilhas.get(i).nome " + this.pilhas.get(i).getNome());
             if (this.pilhas.get(i).getNome().equals(nome)) {
+                System.out.println("Capturou a pilha de nome:  " + this.pilhas.get(i).getNome());
 
                 return this.pilhas.get(i);
             }
@@ -189,8 +190,8 @@ public class Freecell extends Jogo {
      */
     public boolean moveCard(int value, String nipe, String origem, String destino) {
         //mapeia Strings em Regions
-        System.out.println("origem" + origem);
-        System.out.println("destino" + destino);
+        System.out.println("origem " + origem);
+        System.out.println("destino " + destino);
 
 //        return this.celula1.verifyRule(value, nipe, this.fileira1);
         return this.capturaPilha(destino).verifyRule(value, nipe, this.capturaPilha(origem));

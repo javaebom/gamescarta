@@ -43,12 +43,16 @@ public abstract class RegrasMovimentacao {
      * @return true se estiver na ordem descendente, false caso contrario
      */
     public boolean verificaDescendenciaDeConjuntoDeCarta(Stack<Carta> pilhaAuxiliar) {
-        for (int i = 0; i < pilhaAuxiliar.size() - 1; i++) {
-            if (pilhaAuxiliar.get(i + 1).getNumero() == pilhaAuxiliar.get(i).getNumero() - 1) {
-                return true;
+        if (pilhaAuxiliar.size() != 1) {
+            for (int i = 0; i < pilhaAuxiliar.size() - 1; i++) {
+                if (pilhaAuxiliar.get(i + 1).getNumero() == pilhaAuxiliar.get(i).getNumero() - 1) {
+                    return true;
+                }
             }
+            return false;
+        } else {
+            return true;
         }
-        return false;
     }
 
     /**
@@ -58,12 +62,17 @@ public abstract class RegrasMovimentacao {
      * @return true se estiver com cores alternadas, false caso contrario
      */
     public boolean verificaAlternanciaDeCorDeConjuntoDeCarta(Stack<Carta> pilhaAuxiliar) {
-        for (int i = 0; i < pilhaAuxiliar.size() - 1; i++) {
-            if (!pilhaAuxiliar.get(i + 1).getCor().equals(pilhaAuxiliar.get(i).getCor())) {
-                return true;
+        if (pilhaAuxiliar.size() != 1) {
+            for (int i = 0; i < pilhaAuxiliar.size() - 1; i++) {
+                if (!pilhaAuxiliar.get(i + 1).getCor().equals(pilhaAuxiliar.get(i).getCor())) {
+                    return true;
+                }
             }
+            return false;
+        } else {
+            return true;
         }
-        return false;
+
     }
 
     /**
@@ -73,6 +82,9 @@ public abstract class RegrasMovimentacao {
      * @return true se foram da mesma cor, false caso contrario
      */
     public boolean corAlternada(Pilha pilha, String cor) {
+        System.out.println("Regras Movimentação - Entrei no cor alternada");
+        System.out.println("Regras Movimentação - Cor Origem: " + cor);
+        System.out.println("Regras Movimentação - Cor Destino: " + pilha.getPilha().peek().getCor());
         if (!pilha.getPilha().peek().getCor().equals(cor)) {
             return true;
         } else {
@@ -117,7 +129,12 @@ public abstract class RegrasMovimentacao {
      * @return true se for descendente, false caso contrário
      */
     public boolean descendente(Pilha pilha, int valor) {
+        System.out.println("Entrei na Descendencia ");
+        System.out.println("Entrei na Descendencia: valor da destino: " + pilha.getPilha().peek().getNumero());
+        System.out.println("Entrei na Descendencia: valor da origem: " + valor);
+
         if (valor == pilha.getPilha().peek().getNumero() - 1) {
+            System.out.println("Entrei no if, eh descendente");
             return true;
         } else {
             return false;

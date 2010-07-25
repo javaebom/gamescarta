@@ -9,7 +9,7 @@ public class Paciencia extends Jogo {
 
     //Inicialização de todas as pilhas
     Baralho baralho = new Baralho();
-    Estoque estoque = new Estoque(baralho);
+    Estoque estoque = new Estoque();
     Descarte descarte = new Descarte();
     public Fundacao fundacao1 = new Fundacao();
     public Fundacao fundacao2 = new Fundacao();
@@ -43,7 +43,7 @@ public class Paciencia extends Jogo {
         distribuirCartas(fileira6, this.baralho, 15, 21);
         distribuirCartas(fileira7, this.baralho, 21, 28);
 
-        distribuirCartas(descarte, baralho, 28, 51);
+        distribuirCartas(estoque, baralho, 28, 51);
 
 
     }

@@ -66,7 +66,7 @@ public class Carta {
      */
     public String getCor() {
 
-        if (nipe.equals("ESPADAS") || nipe.equals("PAUS")) {
+        if (nipe.equals("ESPADA") || nipe.equals("PAUS")) {
             cor = "PRETA";
         } else {
             cor = "VERMELHA";

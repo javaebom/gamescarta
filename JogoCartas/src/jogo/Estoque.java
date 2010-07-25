@@ -16,17 +16,17 @@ public class Estoque extends Pilha {
      * Construtor
      */
 
-    public Estoque(Baralho baralho){
+    public Estoque(){
 
-        Stack estoque = new Stack();
-        Carta carta = new Carta();
-        
-        for (int i = 0; i < QTDADECARTASESTOQUE; i++)
-        {
-            Object cartaRemovida = baralho.baralho.remove(0);
-            carta = (Carta) cartaRemovida;            
-            estoque.push(carta);            
-        }
+//        Stack estoque = new Stack();
+//        Carta carta = new Carta();
+//
+//        for (int i = 0; i < QTDADECARTASESTOQUE; i++)
+//        {
+//            Object cartaRemovida = baralho.baralho.remove(0);
+//            carta = (Carta) cartaRemovida;
+//            estoque.push(carta);
+//        }
     }
 
     @Override

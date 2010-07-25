@@ -37,7 +37,7 @@ public abstract class Pilha {
      */
     public void adicionarCarta(Stack<Carta> pilhaAuxiliar) {
         for (int i = pilhaAuxiliar.size(); i > 0; i--) {
-            this.pilha.push(pilhaAuxiliar.remove(0));
+            this.pilha.push(pilhaAuxiliar.pop());
         }
     }
 
@@ -53,7 +53,7 @@ public abstract class Pilha {
         int ponteiro = 0;
         int posicao = posicaoCarta(carta);
         while (ponteiro <= posicao) {
-            pilhaAuxiliar.push(this.pilha.remove(0));
+            pilhaAuxiliar.push(this.pilha.pop());
             ponteiro++;
         }
         return pilhaAuxiliar;
@@ -65,7 +65,7 @@ public abstract class Pilha {
      * @return a posição na pilha da carta.
      */
     public int posicaoCarta(Carta carta) {
-        return pilha.indexOf(carta);
+        return pilha.size() - pilha.indexOf(carta) - 1;
     }
 
     /**

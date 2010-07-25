@@ -45,8 +45,8 @@ public class RegrasFundacoes extends RegrasMovimentacao {
             } else {
 
                 //Se a carta movida é do mesmo nipe das cartas que ja estao nas fundacoes e for maior
-                if (!this.corAlternada(pilhaDestino, pilhaOrigem.selecionaCarta(valor, nipe).getCor())) {
-                    if (this.ascendente(pilhaDestino, pilhaOrigem.selecionaCarta(valor, nipe).getNumero())) {
+                if (this.mesmoNipe(pilhaDestino, pilhaAuxiliar.get(0).getNipe())) {
+                    if (this.ascendente(pilhaDestino, pilhaAuxiliar.get(0).getNumero())) {
                         pilhaDestino.adicionarCarta(pilhaAuxiliar);
                     } else {
                         pilhaOrigem.adicionarCarta(pilhaAuxiliar);
