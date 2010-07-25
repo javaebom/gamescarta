@@ -48,6 +48,7 @@ public class RegrasFundacao extends RegrasMovimentacao {
                 if (this.mesmoNipe(pilhaDestino, pilhaAuxiliar.get(0).getNipe())) {
                     if (this.ascendente(pilhaDestino, pilhaAuxiliar.get(0).getNumero())) {
                         pilhaDestino.adicionarCarta(pilhaAuxiliar);
+                        return true;
                     } else {
                         pilhaOrigem.adicionarCarta(pilhaAuxiliar);
                         return false;
@@ -65,6 +66,6 @@ public class RegrasFundacao extends RegrasMovimentacao {
             return false;
         }
 
-        return false;
+        
     }
 }

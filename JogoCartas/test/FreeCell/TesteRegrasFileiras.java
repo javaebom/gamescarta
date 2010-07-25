@@ -216,7 +216,7 @@ public class TesteRegrasFileiras {
         Carta carta7Ouro = new Carta();
         Carta carta6Paus = new Carta();
         Carta carta8Paus = new Carta();
-        carta3Espada.setCarta(3, "ESPADAS");
+        carta3Espada.setCarta(3, "ESPADA");
         carta8Paus.setCarta(8, "PAUS");
         carta7Ouro.setCarta(7, "OURO");
         carta6Paus.setCarta(6, "PAUS");
@@ -273,7 +273,7 @@ public class TesteRegrasFileiras {
         Carta carta7Ouro = new Carta();
         Carta carta6Paus = new Carta();
         Carta carta8Paus = new Carta();
-        carta3Espada.setCarta(3, "ESPADAS");
+        carta3Espada.setCarta(3, "ESPADA");
         carta8Paus.setCarta(8, "PAUS");
         carta7Ouro.setCarta(7, "OURO");
         carta6Paus.setCarta(6, "PAUS");
