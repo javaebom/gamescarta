@@ -67,9 +67,9 @@ public class TesteRegrasMovimentacao {
         carta3Ouro.setCarta(3, "OURO");
         carta4Ouro.setCarta(4, "OURO");
         pilha.push(carta3Ouro);
-        pilha.push(carta2Ouro);
-        assertTrue(regras.verificaDescendenciaDeConjuntoDeCarta(pilha));
         pilha.push(carta4Ouro);
+        assertTrue(regras.verificaDescendenciaDeConjuntoDeCarta(pilha));
+        pilha.push(carta2Ouro);
         assertFalse(regras.verificaDescendenciaDeConjuntoDeCarta(pilha));
     }
 
