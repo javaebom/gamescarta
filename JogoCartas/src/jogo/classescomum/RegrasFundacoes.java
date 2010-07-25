@@ -27,7 +27,7 @@ public class RegrasFundacoes extends RegrasMovimentacao {
     @Override
     public boolean verificaMovimentacao(int valor, String nipe, Pilha pilhaOrigem, Pilha pilhaDestino) {
 
-        Stack<Carta> pilhaAuxiliar = pilhaOrigem.removerCarta(pilhaOrigem.selecionaCarta(valor, nipe));
+        Stack<Carta> pilhaAuxiliar = pilhaOrigem.removerCarta(pilhaOrigem.selecionarCarta(valor, nipe));
 
 
         //Se somente uma carta esta sendo movida pra fundacao

@@ -52,7 +52,7 @@ public abstract class Pilha {
     public Stack<Carta> removerCarta(Carta carta) {
         Stack<Carta> pilhaAuxiliar = new Stack<Carta>();
         int ponteiro = 0;
-        int posicao = posicaoCarta(carta);
+        int posicao = capturarPosicaoCarta(carta);
         while (ponteiro <= posicao) {
             pilhaAuxiliar.push(this.pilha.pop());
             ponteiro++;
@@ -65,7 +65,7 @@ public abstract class Pilha {
      * @param carta Carta que será buscada na pilha
      * @return a posição na pilha da carta.
      */
-    public int posicaoCarta(Carta carta) {
+    public int capturarPosicaoCarta(Carta carta) {
         return pilha.size() - pilha.indexOf(carta) - 1;
     }
 
@@ -83,7 +83,7 @@ public abstract class Pilha {
      * @param nipe string que representa o nipe
      * @return objeto carta
      */
-    public Carta selecionaCarta(int valor, String nipe) {
+    public Carta selecionarCarta(int valor, String nipe) {
         for (int i = 0; i < this.getPilha().size(); i++) {
             if (this.getPilha().get(i).getNipe().equals(nipe) && this.getPilha().get(i).getNumero() == valor) {
                 return this.getPilha().get(i);
@@ -94,7 +94,7 @@ public abstract class Pilha {
 
 
          /**
-     * Captura o número de células ocupadas
+     * Captura o número de cartas que podem ser movidas de uma fileira
      * @return inteiro referente ao número de celulas livres ocupadas
      */
     public int getQtdMaxCartasMover() {
@@ -104,7 +104,7 @@ public abstract class Pilha {
 
 
     /**
-     * Define o número de celulas livres ocupadas
+     * Define o número de cartas que podem ser movidas de uma fileira, a depender do numedo de celulas livre
      * @param numeroCelulasVazias inteiro referente ao número de celulas ocupadas
      */
 

@@ -55,7 +55,7 @@ public class RegrasFileiras extends RegrasMovimentacao {
 
         if (this.pilhaVazia(pilhaDestino)) {
             System.out.println("Regras Fileiras: Entrei no if da pilha vazia");
-            Stack<Carta> pilhaAuxiliar = pilhaOrigem.removerCarta(pilhaOrigem.selecionaCarta(valor, nipe));
+            Stack<Carta> pilhaAuxiliar = pilhaOrigem.removerCarta(pilhaOrigem.selecionarCarta(valor, nipe));
             if (pilhaAuxiliar.size() <= pilhaOrigem.getQtdMaxCartasMover()) {
                 if (this.verificaAlternanciaDeCorDeConjuntoDeCarta(pilhaAuxiliar)) {
                     if (this.verificaDescendenciaDeConjuntoDeCarta(pilhaAuxiliar)) {
@@ -77,15 +77,15 @@ public class RegrasFileiras extends RegrasMovimentacao {
 
         } else {
              System.out.println("Regras Fileiras: Entrei no if da pilha não vazia");
-             System.out.println("Cor Origem: " + pilhaOrigem.selecionaCarta(valor, nipe).getCor());
+             System.out.println("Cor Origem: " + pilhaOrigem.selecionarCarta(valor, nipe).getCor());
              System.out.println("Cor Destino: " + pilhaDestino.getPilha().peek().getCor());
-            if (this.corAlternada(pilhaDestino, pilhaOrigem.selecionaCarta(valor, nipe).getCor())) {
+            if (this.corAlternada(pilhaDestino, pilhaOrigem.selecionarCarta(valor, nipe).getCor())) {
                 System.out.println("Regras Fileiras: Entrei no if da cor alternada");
-                System.out.println("Valor Origem: " + pilhaOrigem.selecionaCarta(valor, nipe).getNumero());
+                System.out.println("Valor Origem: " + pilhaOrigem.selecionarCarta(valor, nipe).getNumero());
                 System.out.println("Valor Destino: " + pilhaDestino.getPilha().peek().getNumero());
-                if (this.descendente(pilhaDestino, pilhaOrigem.selecionaCarta(valor, nipe).getNumero())) {
+                if (this.descendente(pilhaDestino, pilhaOrigem.selecionarCarta(valor, nipe).getNumero())) {
                     System.out.println("Regras Fileiras: Entrei no if da descendencia");
-                    Stack<Carta> pilhaAuxiliar = pilhaOrigem.removerCarta(pilhaOrigem.selecionaCarta(valor, nipe));
+                    Stack<Carta> pilhaAuxiliar = pilhaOrigem.removerCarta(pilhaOrigem.selecionarCarta(valor, nipe));
                     if (pilhaAuxiliar.size() <= pilhaOrigem.getQtdMaxCartasMover()) {
                         if (this.verificaAlternanciaDeCorDeConjuntoDeCarta(pilhaAuxiliar)) {
                             if (this.verificaDescendenciaDeConjuntoDeCarta(pilhaAuxiliar)) {

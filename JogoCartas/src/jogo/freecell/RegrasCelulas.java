@@ -28,7 +28,7 @@ public class RegrasCelulas extends RegrasMovimentacao {
     public boolean verificaMovimentacao(int valor, String nipe, Pilha pilhaOrigem, Pilha pilhaDestino) {
 
         if (this.pilhaVazia(pilhaDestino)) {
-            Stack<Carta> pilhaAuxiliar = pilhaOrigem.removerCarta(pilhaOrigem.selecionaCarta(valor, nipe));
+            Stack<Carta> pilhaAuxiliar = pilhaOrigem.removerCarta(pilhaOrigem.selecionarCarta(valor, nipe));
             if (pilhaAuxiliar.size() == 1) {
                 pilhaDestino.adicionarCarta(pilhaAuxiliar);
                 return true;
