@@ -294,7 +294,7 @@ public class FrameCardGame extends javax.swing.JFrame {
         String prefixoBlack = "<font color='#000000'>";
         String prefixoRed = "<font color='#CD0000'>";
 
-        for (int j = 0; j >= freecell.celula1.getPilha().size() - 1; j++) {
+        for (int j = freecell.celula1.getPilha().size() - 1; j >= 0; j--) {
 
             value = String.valueOf(freecell.celula1.getPilha().get(j).getNumero());
             nipe = freecell.celula1.getPilha().get(j).getNipe();
@@ -312,7 +312,7 @@ public class FrameCardGame extends javax.swing.JFrame {
         painelC1.setText(cards);
         cards = "";
 
-        for (int j = 0; j >= freecell.celula2.getPilha().size() - 1; j++) {
+        for (int j = freecell.celula2.getPilha().size() - 1; j >= 0; j--) {
 
             value = String.valueOf(freecell.celula2.getPilha().get(j).getNumero());
             nipe = freecell.celula2.getPilha().get(j).getNipe();
@@ -331,7 +331,7 @@ public class FrameCardGame extends javax.swing.JFrame {
         cards = "";
 
 
-        for (int j = 0; j >= freecell.celula3.getPilha().size() - 1; j++) {
+        for (int j = freecell.celula3.getPilha().size() - 1; j >= 0; j--) {
 
             value = String.valueOf(freecell.celula3.getPilha().get(j).getNumero());
             nipe = freecell.celula3.getPilha().get(j).getNipe();
@@ -351,7 +351,7 @@ public class FrameCardGame extends javax.swing.JFrame {
 
 
 
-        for (int j = 0; j >= freecell.celula4.getPilha().size() - 1; j++) {
+        for (int j = freecell.celula4.getPilha().size() - 1; j >= 0; j--) {
 
             value = String.valueOf(freecell.celula4.getPilha().get(j).getNumero());
             nipe = freecell.celula4.getPilha().get(j).getNipe();
@@ -372,6 +372,7 @@ public class FrameCardGame extends javax.swing.JFrame {
 
 
     }
+
 
     public String fillLineofTextPane(String valueENipe) {
 

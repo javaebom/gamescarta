@@ -10,7 +10,7 @@ import java.util.Stack;
  */
 public abstract class Pilha {
 
-    Stack<Carta> pilha = new Stack<Carta>();
+    public Stack<Carta> pilha = new Stack<Carta>();
     RegrasMovimentacao regras;
     public String nome;
 

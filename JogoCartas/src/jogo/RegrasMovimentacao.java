@@ -45,11 +45,11 @@ public abstract class RegrasMovimentacao {
     public boolean verificaDescendenciaDeConjuntoDeCarta(Stack<Carta> pilhaAuxiliar) {
         if (pilhaAuxiliar.size() != 1) {
             for (int i = 0; i < pilhaAuxiliar.size() - 1; i++) {
-                if (pilhaAuxiliar.get(i + 1).getNumero() == pilhaAuxiliar.get(i).getNumero() - 1) {
-                    return true;
+                if (pilhaAuxiliar.get(i).getNumero() != pilhaAuxiliar.get(i +1).getNumero() - 1) {
+                    return false;
                 }
             }
-            return false;
+            return true;
         } else {
             return true;
         }
@@ -64,11 +64,11 @@ public abstract class RegrasMovimentacao {
     public boolean verificaAlternanciaDeCorDeConjuntoDeCarta(Stack<Carta> pilhaAuxiliar) {
         if (pilhaAuxiliar.size() != 1) {
             for (int i = 0; i < pilhaAuxiliar.size() - 1; i++) {
-                if (!pilhaAuxiliar.get(i + 1).getCor().equals(pilhaAuxiliar.get(i).getCor())) {
-                    return true;
+                if (pilhaAuxiliar.get(i + 1).getCor().equals(pilhaAuxiliar.get(i).getCor())) {
+                    return false;
                 }
             }
-            return false;
+            return true;
         } else {
             return true;
         }
