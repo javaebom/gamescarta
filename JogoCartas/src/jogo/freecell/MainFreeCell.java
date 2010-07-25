@@ -4,7 +4,7 @@
  */
 package jogo.freecell;
 
-import jogo.classescomum.FrameCardGame;
+import jogo.classescomum.InterfaceFreeCell;
 
 /**
  *Classe que invoca a interface gráfica para início de jogo
@@ -18,7 +18,7 @@ public class MainFreeCell {
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
-                new FrameCardGame().setVisible(true);
+                new InterfaceFreeCell().setVisible(true);
 
 
             }
