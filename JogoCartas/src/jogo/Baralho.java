@@ -14,10 +14,13 @@ public class Baralho {
 
     public Vector<Carta> baralho = new Vector<Carta>(52);;
 
+
     /*
      * Inicializa o baralho com 52 cartas.
      */
     public void inicializaBaralho(){
+
+        System.out.println("CONSEGUI");
 
         Carta carta;
 
